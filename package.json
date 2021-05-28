@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/colonist4/real-earth#readme",
   "dependencies": {
+    "geotiff": "^1.0.4",
     "three": "^0.128.0"
   },
   "devDependencies": {
+    "@types/node": "^15.6.1",
     "@types/three": "^0.128.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",

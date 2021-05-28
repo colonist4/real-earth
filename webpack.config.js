@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: './src/index.ts',
+        // index: './src/index.ts',
         korea: './src/korea.ts',
     },
     devtool: 'inline-source-map',
@@ -54,7 +54,8 @@ module.exports = {
         
     ],
     devServer:{
-        contentBase:`${__dirname}/dist`,
+        contentBase: [`${__dirname}/dist`, `${__dirname}/result`],
+        contentBasePublicPath: ['/', '/result'],
         inline:true,
         hot:true,
         proxy: {
@@ -76,7 +77,7 @@ module.exports = {
             //     secure:false
             // }
         },
-        host: '127.0.0.1',
+        host: '0.0.0.0',
         port: 4500
     },
     cache: {
