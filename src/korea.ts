@@ -4,7 +4,7 @@ import { FlyControls } from 'three/examples/jsm/controls/FlyControls'
 // const displacementFile = require('../resources/displacement.png')
 const mapFile = require('../resources/texture.jpg')
 
-const SEA_HEIGHT = 1
+const SEA_HEIGHT = 10
 
 async function init(){
     const textureLoader = new THREE.TextureLoader()
